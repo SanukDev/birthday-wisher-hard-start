@@ -40,7 +40,7 @@ if (month, day) in dic_data:
 
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
-        connection.login(user="samukakaroto123@gmail.com", password="wplk zuyj gapn ntrs")
+        connection.login(user="samukakaroto123@gmail.com", password=my_password)
         connection.sendmail(from_addr="samukakaroto123@gmail.com",
                             to_addrs=email, msg=f"Subject: Happy birthday! \n\n{letter_ready}")
 
